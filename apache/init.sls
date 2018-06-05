@@ -10,3 +10,8 @@ index_html:
     - group: apache
     - mode: 644
     - source: salt://apache/templates/index.html
+
+apache_service:
+  service.running:
+    - name: httpd
+    - enable: True
